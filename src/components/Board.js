@@ -1,5 +1,34 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { Component } from 'react';
+import Square from './Square';
+import Socket from './Socket';
 
+class Board extends Component { 
+  playerMove = index => {
+    if(this.state.p1_turn === this.state.isPlayer_one && this.state.grid[index]===0){
+      if(this.state.isPlayer_one){
+          Socket.emit("move", index, 1);
+      }
+      else{
+          Socket.emit("move", index, -1);
+      }
+    }
+  }
+
+  render = () => {
+    const gamestate = this.props.gamestate;
+    return (
+    <div className="board">
+        {gamestate.grid.map((value,index) => {
+            return <Square val={value.toString()} index={index} gamestate={{isPlayer_one:this.props.isPlayer_one, ...gamestate}}/>
+        })}
+    </div>
+
+    )
+  }
+}
+export default Board;
+
+/*
 const Board = ({ socket }) => {
   //Hooks
   const [turn, setTurn] = useState(0);
@@ -141,5 +170,4 @@ const Board = ({ socket }) => {
   );
 };
 
-export default Board;
-
+*/

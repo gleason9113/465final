@@ -79,6 +79,12 @@ const Board = ({ socket }) => {
     //block.current = false;
   };
 
+
+  socket.on('move_done', (data) => {
+    console.log("From Server" + JSON.stringify(data));
+  })
+ 
+
   return (
     <div ref={reference} className="container-sm w-50">
       <div className="row">

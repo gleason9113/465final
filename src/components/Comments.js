@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 // Form in Connect Page
 function Comments() {
   console.log('in Comments');
+
   const [comments, setComments] = useState(``);
 
   console.log('in publish');

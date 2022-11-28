@@ -91,6 +91,7 @@ test('Buttons render correctly', () => {
   fireEvent.click(home);
   fireEvent.click(about);
   fireEvent.click(howTo);
+  fireEvent.click(connect);
   fireEvent.click(comment);
 
   // expected results

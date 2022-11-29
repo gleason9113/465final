@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Banner from './Banner';
 import Board from './Board';
 
@@ -9,6 +9,11 @@ const Home = ({
   second_player,
   gameFinished,
 }) => {
+  const [updater, setUpdater] = useState(0);
+  useEffect(() => {
+    setUpdater(updater + 1);
+  }, []);
+
   return (
     <div>
       <Banner />

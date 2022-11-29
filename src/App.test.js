@@ -121,9 +121,10 @@ describe("Chat Tests", () => {
     render(<Chat socket={socket} />);
     let history = screen.getByLabelText("chat-history");
     expect(history).toBeDefined();
-    expect(history.getAttribute('aria-label')).toBe('chat-history');
+    expect(history.getAttribute('className')).toBe('chat-history');
   })
 
+ 
 
 
 })

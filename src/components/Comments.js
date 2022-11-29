@@ -1,35 +1,37 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-// Form in Connect Page
+// Comments left by users using the form on Connect Page displays here
 function Comments() {
-  console.log('in Comments');
-
+  // Hook
   const [comments, setComments] = useState(``);
+  let comment_holder = '';
 
-  console.log('in publish');
-
-  const url = 'http://localhost:8080/comments';
-
+  // Get data from /comments to display on the page
   const fetchData = async (url) => {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      //console.log(JSON.stringify(data));
+
       data.forEach((commenter) => {
-        setComments(
-          comments + `${commenter.name} says ${commenter.comments} \n`
-        );
+        comment_holder =
+          comment_holder + `\n${commenter.name} says ${commenter.comments} `;
       });
+      setComments(comments + comment_holder);
     } catch (error) {
       console.error(error);
     }
   };
 
-  fetchData(url);
+  useEffect(() => {
+    const url = 'http://localhost:8080/comments';
+    fetchData(url);
+  }, []);
 
   return (
     <div className="container mx-auto my-auto text-center">
-      <div>{`${comments}`}</div>
+      <div>
+        <pre>{`${comments}`}</pre>
+      </div>
     </div>
   );
 }

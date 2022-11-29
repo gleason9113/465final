@@ -19,6 +19,7 @@ const Board = ({
   const errorCode = useRef(-1);
   const winner = useRef(-2);
   const button = useRef();
+  const state = useRef([]);
 
   // useEffect works after render
   useEffect(() => {

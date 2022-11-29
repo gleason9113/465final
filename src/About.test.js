@@ -76,25 +76,72 @@ test('Connect page renders correctly', () => {
   // expected results
 });
 
-test('Buttons render correctly', () => {
+test('Buttons function correctly', () => {
   // render About on virtual dom
   render(<Buttons />);
 
-  // elements to test
+  // buttons to test
   const home = screen.getByTestId('home_button');
   const about = screen.getByTestId('about_button');
   const howTo = screen.getByTestId('howToPlay_button');
   const connect = screen.getByTestId('connect_button');
-  const comment = screen.getByTestId('comment');
+  //const comment = screen.getByTestId('comment');
 
   // interaction
   fireEvent.click(home);
   fireEvent.click(about);
   fireEvent.click(howTo);
   fireEvent.click(connect);
-  fireEvent.click(comment);
+  //fireEvent.click(comment);
 
   // expected results
+  expect(home).toHaveBeenCalledTimes(1);
+  expect(about).toHaveBeenCalledTimes(1);
+  expect(howTo).toHaveBeenCalledTimes(1);
+  expect(connect).toHaveBeenCalledTimes(1);
+  // expect(comment).toHaveBeenCalledTimes(1);
+});
+
+test('About render correctly when About button clicked', () => {
+  // render About on virtual dom
+  render(<Buttons />);
+
+  // buttons to test
+  const about = screen.getByTestId('about_button');
+  const heading = screen.getByTestId('about');
+  const p1 = screen.getByTestId('p1');
+  const p2 = screen.getByTestId('p2');
+  const p3 = screen.getByTestId('p3');
+  const p4 = screen.getByTestId('p4');
+  const project = screen.getByTestId('link-project');
+  const cera_git = screen.getByTestId('cera-git');
+  const alex_git = screen.getByTestId('alex-git');
+  const ariel_git = screen.getByTestId('ariel-git');
+
+  // interaction
+  fireEvent.click(about);
+
+  // expected results
+  expect(heading).toHaveTextContent('About');
+  expect(p1).toHaveTextContent(
+    'This is a CS465/565 Final Project by Ariel, Cera, and Alex'
+  );
+  expect(p2).toHaveTextContent(
+    'We wanted to implement a game using Node.js, React.js, Express.js, and Socket.io'
+  );
+  expect(p3).toHaveTextContent('We decided on a Tic-Tac-Toe game');
+  expect(p4).toHaveTextContent('Our project code can be found in:');
+  expect(project).toHaveAttribute(
+    'href',
+    'https://github.com/gleason9113/465final'
+  );
+  expect(project).toHaveAttribute('target', '_blank');
+  expect(cera_git).toHaveAttribute('href', 'https://github.com/C3ra906');
+  expect(cera_git).toHaveAttribute('target', '_blank');
+  expect(alex_git).toHaveAttribute('href', 'https://github.com/sashetov');
+  expect(alex_git).toHaveAttribute('target', '_blank');
+  expect(ariel_git).toHaveAttribute('href', 'https://github.com/gleason9113');
+  expect(ariel_git).toHaveAttribute('target', '_blank');
 });
 
 test('ButtonHandler render correctly', () => {

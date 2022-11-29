@@ -100,6 +100,13 @@ eslint for linting
 [https://stackoverflow.com/questions/56978283/unit-testing-react-click-outside-component-using-jest-and-react-testing-library](https://stackoverflow.com/questions/56978283/unit-testing-react-click-outside-component-using-jest-and-react-testing-library)
 [https://testing-library.com/docs/user-event/setup/](https://testing-library.com/docs/user-event/setup/)
 [how-to-mock-socket-io-client-using-jest-react-testing-library](https://stackoverflow.com/questions/58211676/how-to-mock-socket-io-client-using-jest-react-testing-library)
+[Looping over JSON array in Javascript](https://zetcode.com/javascript/jsonforeach/)
+[Sending HTTP POST Request in Javascript](https://reqbin.com/code/javascript/wzp2hxwh/javascript-post-request-example)
+[React Testing For Links With Code Examples](https://www.folkstalk.com/tech/react-testing-for-links-with-code-examples/)
+[handling events](https://reactjs.org/docs/handling-events.html)
+[Emit Cheatsheet](https://socket.io/docs/v3/emit-cheatsheet/)
+[The Complete Guide to useRefs and Refs in React](https://dmitripavlutin.com/react-useref-guide/)
+[React Conditional Rendering](https://www.w3schools.com/react/react_conditional_rendering.asp)
 
 ## Test /join endpoint from browser:
 

@@ -8,9 +8,10 @@ const Board = ({
   second_player,
   newGame,
   gameFinished,
+  board_update,
 }) => {
   // Hooks
-  const [boardState, setBoard] = useState(['', '', '', '', '', '', '', '', '']); // holds the board state
+  const [boardState, setBoard] = useState(board_update.current); // holds the board state
   const [message, setMessage] = useState(''); // used for user message display
   const [update, setUpdate] = useState(0); // used to re-render the page
   const reference = useRef(null);
@@ -78,10 +79,13 @@ const Board = ({
       console.log('The move is invalid');
       setUpdate(update + 1);
     }
+
     // Updates the board on client side and displays in console
     setBoard([...state]);
+    board_update.current = [...state];
     console.log('Updated board:');
     console.log(state);
+
     // Determines user message to display
     message_picker();
 
@@ -151,6 +155,7 @@ const Board = ({
       setMessage(``);
     }
     gameFinished.current = true;
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
     setUpdate(update + 1);
   };
 

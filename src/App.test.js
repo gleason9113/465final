@@ -35,6 +35,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -44,6 +45,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('row-0')).toBeTruthy();
@@ -55,6 +57,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -64,6 +67,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('row-1')).toBeTruthy();
@@ -75,6 +79,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -84,6 +89,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('row-2')).toBeTruthy();
@@ -95,6 +101,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -104,6 +111,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 0')).toBeTruthy();
@@ -115,6 +123,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -124,6 +133,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 1')).toBeTruthy();
@@ -135,6 +145,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -144,6 +155,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 2')).toBeTruthy();
@@ -155,6 +167,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -164,6 +177,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 3')).toBeTruthy();
@@ -175,6 +189,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -184,6 +199,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 4')).toBeTruthy();
@@ -195,6 +211,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -204,6 +221,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 5')).toBeTruthy();
@@ -215,6 +233,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -224,6 +243,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 6')).toBeTruthy();
@@ -235,6 +255,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -244,6 +265,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 7')).toBeTruthy();
@@ -255,6 +277,7 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
+    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
 
     // render
     render(
@@ -264,6 +287,7 @@ describe('Board Tests', () => {
         first_player={first_player}
         second_player={second_player}
         gameFinished={gameFinished}
+        board_update={board_update}
       />
     );
     expect(screen.getByLabelText('cell 8')).toBeTruthy();

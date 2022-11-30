@@ -111,7 +111,8 @@ test('Home render to match snapshot when newGame is false', () => {
   const first_player = 'A';
   const second_player = 'B';
   const gameFinished = React.createRef(false);
-  const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+  const board_update = React.createRef();
+  board_update.current = ['', '', '', '', '', '', '', '', ''];
 
   // render
   const about = renderer
@@ -141,7 +142,8 @@ test('Home render to match snapshot when newGame is true', () => {
   const first_player = 'A';
   const second_player = 'B';
   const gameFinished = React.createRef(false);
-  const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+  const board_update = React.createRef();
+  board_update.current = ['', '', '', '', '', '', '', '', ''];
 
   // render
   const about = renderer
@@ -350,7 +352,8 @@ test('Board render to match snapshot when game is not finished', () => {
   const first_player = 'A';
   const second_player = 'B';
   const gameFinished = React.createRef(false);
-  const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+  const board_update = React.createRef();
+  board_update.current = ['', '', '', '', '', '', '', '', ''];
 
   // render
   const board = renderer
@@ -380,7 +383,8 @@ test('Board render to match snapshot when game is finished', () => {
   const first_player = 'A';
   const second_player = 'B';
   const gameFinished = React.createRef(true);
-  const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+  const board_update = React.createRef();
+  board_update.current = ['', '', '', '', '', '', '', '', ''];
 
   // render
   const board = renderer

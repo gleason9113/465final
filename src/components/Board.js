@@ -196,7 +196,7 @@ const Board = ({ socket, first_player, second_player, newGame }) => {
 
   // renders the board
   return (
-    <div ref={reference} className="container-sm w-50">
+    <div ref={reference} className="container-sm w-50" aria-label="board">
       <div className="row" aria-label="row-0">
         <div
           className="col cell text-center"

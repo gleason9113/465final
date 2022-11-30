@@ -48,9 +48,9 @@ const Board = ({
         errorCode.current = -1; //resets value to default
         markSquare.current = false; //resets value to default
       }
+
       mark(state, win);
     });
-
   }, [socket, boardState]);
 
   // Functions
@@ -78,12 +78,10 @@ const Board = ({
       console.log('The move is invalid');
       setUpdate(update + 1);
     }
-
     // Updates the board on client side and displays in console
     setBoard([...state]);
     console.log('Updated board:');
     console.log(state);
-
     // Determines user message to display
     message_picker();
 
@@ -120,7 +118,7 @@ const Board = ({
   const message_picker = () => {
     console.log('in message');
     if (errorCode.current === 1) {
-      setMessage(`You are not in a game. Please join.`);
+      setMessage(`You are not in a game. Please join by refreshing the page.`);
     } else if (errorCode.current === 2) {
       setMessage(`Invalid move id`);
     } else if (errorCode.current === 3) {

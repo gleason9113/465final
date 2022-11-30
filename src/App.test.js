@@ -35,7 +35,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -57,7 +58,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -79,7 +81,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -101,7 +104,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -123,7 +127,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -145,7 +150,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -167,7 +173,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -189,7 +196,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -211,7 +219,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -233,7 +242,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -255,7 +265,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
@@ -277,7 +288,8 @@ describe('Board Tests', () => {
     const first_player = 'A';
     const second_player = 'B';
     const gameFinished = React.createRef(false);
-    const board_update = React.createRef(['', '', '', '', '', '', '', '', '']);
+    const board_update = React.createRef();
+    board_update.current = ['', '', '', '', '', '', '', '', ''];
 
     // render
     render(
